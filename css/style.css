@@ -1,15 +1,34 @@
 body {
-    background-color: rgb(168, 168, 168);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3bead+0,dfe5d7+60,fcfff4+100 */
+background: #b3bead; /* Old browsers */
+background: -moz-linear-gradient(top, #b3bead 0%, #dfe5d7 60%, #fcfff4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b3bead 0%,#dfe5d7 60%,#fcfff4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b3bead 0%,#dfe5d7 60%,#fcfff4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3bead', endColorstr='#fcfff4',GradientType=0 ); /* IE6-9 */
 }
 
 
 .jumbotron {
     margin-bottom: 0px;
     padding-bottom: 10px;
-    background-color: rgb(77, 71, 71);
+    background-image: url("../images/background.jpeg");
+    background-attachment: fixed;
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#title {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    color: #ffffff;
+    background: #35424a;
+ 
 }

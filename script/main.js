@@ -5,14 +5,14 @@ function saveBookmark(e){
     // get variables and outpout to console
     var siteName = document.getElementById('siteName').value;
     var siteUrl = document.getElementById('siteUrl').value;
-    var siteNote = document.getElementById('siteNote').value;
+    //var siteNote = document.getElementById('siteNote').value;
     
 
     //define var for local storage
     var bookmark = {
         name: siteName,
-        url: siteUrl,
-        note: siteNote
+        url: siteUrl
+       // note: siteNote
     }
     /*
     //local storage test
@@ -76,7 +76,7 @@ function fetchBookmarks(){
     for(var i = 0; i < bookmarks.length; i++){
         var name = bookmarks[i].name;
         var url = bookmarks[i].url;
-        var note = bookmarks[i].note;
+       // var note = bookmarks[i].note;
 
         bookmarkResults.innerHTML += '<div class="card" "card card-inverse" style="background-color: white; border-color: darkgray;">'+
                                      '<h4 class="card-title">'+name+
@@ -85,11 +85,11 @@ function fetchBookmarks(){
                                      '<a class="btn btn-success" target="_blank" href="'+url+'">Visit</a> ' +
                                      '<a onclick="deleteBookmark(\''+url+'\')" class="btn btn-danger" href="#">Delete</a>' +
                                      '</h4>'+
-                                     '<h5>'+"Note:"+
-                                     '</h5>'+
-                                     '<p>'+note+
-                                     '</p>'+
-                                     '<br>'+
+                                     //'<h5>'+"Note:"+
+                                     //'</h5>'+
+                                     //'<p>'+note+
+                                    // '</p>'+
+                                    // '<br>'+
                                      '</div>'+
                                      '</div>';
     }

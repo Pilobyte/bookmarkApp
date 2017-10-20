@@ -27,24 +27,26 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <h1>RememberIT APP</h1>
+      <div id="title">
+          <h1>RememberIT APP</h1><br>
+      </div>    
       
         <div class="row">
           <div class="col-md-4">
         <h2>Bookmarks</h2>
           <form id="bookmarkForm">
             <div class = "form-group">
-              <label>Site Name</label>
+              <lable>Site Name</lable>
               <input type = "text" class="form-control" id = "siteName" placeholder = "Webiste Name">  
             </div>
             <div class="form-group">
-              <label>Site URL</label> 
+              <lable>Site URL</lable> 
               <input type="text" class="form-control" id="siteUrl" placeholder="URL">           
             </div> 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label>Site Note</label> 
                 <input type="text" class="form-control" id="siteNote" placeholder="Notes">           
-              </div> 
+              </div> -->
             <button type="submit" class= "btn btn-primary">Add Bookmark</button>
           </form>
           </div>
@@ -97,12 +99,19 @@
             <h2>Notes</h2>
           </div>
 
-      <hr>
-
-      <footer>
-        <p>&copy; 2017 Pilobyte.com</p>
-      </footer>
+      <hr>  
     </div> <!-- /container -->
+   
     <script src="script/main.js"></script>
   </body>
+
+  <footer>
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <p>&copy; 2017 Pilobyte.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
